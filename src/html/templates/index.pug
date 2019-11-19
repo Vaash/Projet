@@ -1,31 +1,24 @@
-- var pugTitle= 'Connection'
+<!DOCTYPE html>
+<html lang="en">
 
-include ../partials/header.pug
-
-<div class="container">
-  .row
-    .offset-md-4.col-md-4.alignImage
-      img(src="../img/Droid4You.png", alt="", width="500" class=".Droid4You")
-  br
-
+  head
+    <meta charset="UTF-8">
+    <meta name="description" content="login page">
+    link(rel="stylesheet", href="style.css")
+    title= login
     
-
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <div class="fadeIn first">
-
-    <form action="../Dashboard.html">
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Identifiant">
-
-      br
-
-      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Mot de passe">
-
-      br
-
-      <input type="submit" class="fadeIn fourth" value="Connexion">
-
-    <div id="formFooter">
-      <a class="underlineHover" href="./lost-password.html">Mot de passe oublié?
-      
-include ../partials/footer.pug
+  body
+.wrapper.fadeInDown
+  #formContent
+    // Tabs Titles
+    // Icon
+    div
+      img#icon.Droid4You(src='./img/Droid4You.png' alt='User Icon')
+    // Login Form
+    form(action='../Dashboard.html')
+      input#login(type='text' name='login' placeholder='Identifiant')
+      input#password(type='password' name='login' placeholder='Mot de passe')
+      input(type='submit' value='Connexion')
+    // Remind Passowrd
+    #formFooter
+      a.underlineHover(href='./lost-password.html') Mot de passe oubli&eacute;?
