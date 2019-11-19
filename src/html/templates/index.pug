@@ -1,0 +1,31 @@
+- var pugTitle= 'Connection'
+
+include ../partials/header.pug
+
+<div class="container">
+  .row
+    .offset-md-4.col-md-4.alignImage
+      img(src="../img/Droid4You.png", alt="", width="500" class=".Droid4You")
+  br
+
+    
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+
+    <form action="../Dashboard.html">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Identifiant">
+
+      br
+
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Mot de passe">
+
+      br
+
+      <input type="submit" class="fadeIn fourth" value="Connexion">
+
+    <div id="formFooter">
+      <a class="underlineHover" href="./lost-password.html">Mot de passe oublié?
+      
+include ../partials/footer.pug
