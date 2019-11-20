@@ -2,72 +2,95 @@ include ../partials/header.pug
 include ../partials/navbar.pug
 
 div
-  label Combat Droids !  
-    table.table.table-dark
-      thead 
-        tr
-          th(scope='col') Name
-          th(scope='col') Number
-          th(scope='col') Price
-          th(scope='col') Stock
-      tbody
-        tr
-          th(scope='row') Combat Droid B1
-          td 1548721541
-          td 25.000 RC
-          td 1B Units
-        tr
-          th(scope='row') Combat Droid B2
-          td 1548721542
-          td 50.000 RC
-          td 250M Units
-div
-  label Command Droids !  
-    table.table.table-dark
-      thead 
-        tr
-          th(scope='col') Name
-          th(scope='col') Number
-          th(scope='col') Price
-          th(scope='col') Stock
-      tbody
-        tr
-          th(scope='row') Command Droid
-          td 1548721543
-          td 40.000 RC
-          td 200M Units
-div
-  label Pilote Droids !  
-    table.table.table-dark
-      thead 
-        tr
-          th(scope='col') Name
-          th(scope='col') Number
-          th(scope='col') Price
-          th(scope='col') Stock
-      tbody
-        tr
-          th(scope='row') Pilote Droid
-          td 1548721544
-          td 100.000 RC
-          td 100M Units
-div
-  label Protocol Droids !  
-    table.table.table-dark
-      thead 
-        tr
-          th(scope='col') Name
-          th(scope='col') Number
-          th(scope='col') Price
-          th(scope='col') Stock
-      tbody
-        tr
-          th(scope='row') Protocol Droid
-          td 0000000001
-          td 26.000 pesos
-          td 1 Unit
-.buttons
-  a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-  a.btn.btn-primary(href='./edit-droid.html' role='button') Add droid
+  .container
+    button.btn.btn-lg.btn-dark(type='button' style='float: right; margin: 50px;') Add droid
+
+.container
+  h3.yoMama Combat Droids !  
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Combat Droid B1
+        div
+          img(src='./combatDroidB1.jpg')
+        td 1548721541
+        td 25.000 RC
+        td 1B Units
+        td
+          .btn-group(role='group')
+            button.btn.btn-secondary(type='button') View
+            button.btn.btn-secondary(type='button') Edit
+      tr
+        th(scope='row') Combat Droid B2
+        td 1548721542
+        td 50.000 RC
+        td 250M Units
+        td
+          .btn-group(role='group')
+            button.btn.btn-secondary(type='button') View
+            button.btn.btn-secondary(type='button') Edit
+.container
+  h3 Command Droids ! 
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Command Droid
+        td 1548721543
+        td 40.000 RC
+        td 200M Units
+        td
+          .btn-group(role='group')
+            button.btn.btn-secondary(type='button') View
+            button.btn.btn-secondary(type='button') Edit
+.container
+  h3 Pilote Droids ! 
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Pilote Droid
+        td 1548721544
+        td 100.000 RC
+        td 100M Units
+        td
+          .btn-group(role='group')
+            button.btn.btn-secondary(type='button') View
+            button.btn.btn-secondary(type='button') Edit
+.container
+  h3 Protocol Droids !
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Protocol Droid
+        td 0000000001
+        td 26.000 pesos
+        td 1 Unit
+        td
+          .btn-group(role='group')
+            button.btn.btn-secondary(type='button' href='./content.html') View
+            button.btn.btn-secondary(type='button') Edit
 
 include ../partials/footer.pug
