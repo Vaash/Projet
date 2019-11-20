@@ -1,17 +1,73 @@
 include ../partials/header.pug
 include ../partials/navbar.pug
 
-.container
-  .row
-    .col-md-12
-      .ul.list-group
-        li.list-group-item(href='./content.html') Cras justo odio
-        li.list-group-item Dapibus ac facilisis in
-        li.list-group-item Morbi leo risus
-        li.list-group-item Porta ac consectetur ac
-        li.list-group-item Vestibulum at eros
-
-a.btn.btn-secondary(href='./content.html' role='button') View
-a.btn.btn-primary(href='./edit-droid.html' role='button') Add droid
+div
+  label Combat Droids !  
+    table.table.table-dark
+      thead 
+        tr
+          th(scope='col') Name
+          th(scope='col') Number
+          th(scope='col') Price
+          th(scope='col') Stock
+      tbody
+        tr
+          th(scope='row') Combat Droid B1
+          td 1548721541
+          td 25.000 RC
+          td 1B Units
+        tr
+          th(scope='row') Combat Droid B2
+          td 1548721542
+          td 50.000 RC
+          td 250M Units
+div
+  label Command Droids !  
+    table.table.table-dark
+      thead 
+        tr
+          th(scope='col') Name
+          th(scope='col') Number
+          th(scope='col') Price
+          th(scope='col') Stock
+      tbody
+        tr
+          th(scope='row') Command Droid
+          td 1548721543
+          td 40.000 RC
+          td 200M Units
+div
+  label Pilote Droids !  
+    table.table.table-dark
+      thead 
+        tr
+          th(scope='col') Name
+          th(scope='col') Number
+          th(scope='col') Price
+          th(scope='col') Stock
+      tbody
+        tr
+          th(scope='row') Pilote Droid
+          td 1548721544
+          td 100.000 RC
+          td 100M Units
+div
+  label Protocol Droids !  
+    table.table.table-dark
+      thead 
+        tr
+          th(scope='col') Name
+          th(scope='col') Number
+          th(scope='col') Price
+          th(scope='col') Stock
+      tbody
+        tr
+          th(scope='row') Protocol Droid
+          td 0000000001
+          td 26.000 pesos
+          td 1 Unit
+.buttons
+  a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+  a.btn.btn-primary(href='./edit-droid.html' role='button') Add droid
 
 include ../partials/footer.pug

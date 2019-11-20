@@ -3,11 +3,8 @@ include ../partials/navbar.pug
 
 form.text-center.border.border-light.p-5(action='#!')
   p.h4.mb-4 Contact us
-  // Name
   input#defaultContactFormName.form-control.mb-4(type='text' placeholder='Name')
-  // Email
   input#defaultContactFormEmail.form-control.mb-4(type='email' placeholder='E-mail')
-  // Subject
   label Subject
   select.browser-default.custom-select.mb-4
     option(value='' disabled='') Choose option
@@ -15,14 +12,11 @@ form.text-center.border.border-light.p-5(action='#!')
     option(value='2') Report a bug
     option(value='3') Feature request
     option(value='4') Feature request
-  // Message
   .form-group
     textarea#exampleFormControlTextarea2.form-control.rounded-0(rows='3' placeholder='Message')
-  // Copy
   .custom-control.custom-checkbox.mb-4
     input#defaultContactFormCopy.custom-control-input(type='checkbox')
     label.custom-control-label(for='defaultContactFormCopy') Send me a copy of this message
-  // Send button
   button.btn.btn-secondary(type='submit') Cancel
   button.btn.btn-info(type='submit') Add
 

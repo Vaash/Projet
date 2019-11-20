@@ -1,3 +1,15 @@
-.dashboard {
-    background: red;
+html {
+    box-sizing: border-box;
+}
+
+.table-dark {
+    margin: auto;
+    transform: translateY(100%);
+    max-width: 100%;
+    width: 100%;
+}
+
+.buttons {
+    transform: translateY(300px);
+    
 }

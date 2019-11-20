@@ -2,15 +2,11 @@ include ../partials/header.pug
 
 .wrapper.fadeInDown
   #formContent
-    // Tabs Titles
-    // Icon
     div
       img#icon.Droid4You(src='./img/Droid4You.png' alt='User Icon')
-    // Login Form
     form(action='./dashboard.html')
       input#login(type='text' name='login' placeholder='Identifiant')
       input#password(type='password' name='login' placeholder='Mot de passe')
       input(type='submit' value='Connexion')
-    // Remind Passowrd
     #formFooter
       a.underlineHover(href='./lost-password.html') Mot de passe oubli&eacute;?
