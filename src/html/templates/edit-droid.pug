@@ -1,24 +1,25 @@
 include ../partials/header.pug
 include ../partials/navbar.pug
 
-form.text-center.border.border-light.p-5(action='#!')
-  p.h4.mb-4 Contact us
-  input#defaultContactFormName.form-control.mb-4(type='text' placeholder='Name')
-  input#defaultContactFormEmail.form-control.mb-4(type='email' placeholder='E-mail')
-  label Subject
-  select.browser-default.custom-select.mb-4
-    option(value='' disabled='') Choose option
-    option(value='1' selected='') Feedback
-    option(value='2') Report a bug
-    option(value='3') Feature request
-    option(value='4') Feature request
-  .form-group
-    textarea#exampleFormControlTextarea2.form-control.rounded-0(rows='3' placeholder='Message')
-  .custom-control.custom-checkbox.mb-4
-    input#defaultContactFormCopy.custom-control-input(type='checkbox')
-    label.custom-control-label(for='defaultContactFormCopy') Send me a copy of this message
-  button.btn.btn-secondary(type='submit') Cancel
-  button.btn.btn-info(type='submit') Add
+div.total
+  div.img
+  img(src="./img/combatDroidB1.jpg", alt="Droid", class='image')
+  form.box(action='./dashboard.html')
+    h4.mb-4 New Droid Boss ?
+    div.inputs
+      input.mb-4.col-md-8(type='text' placeholder='Name')
+      br
+      input.mb-4(type='number' placeholder='Number')
+      br
+      input.mb-4(type='number' placeholder='Selling price')
+      br
+      input.mb-4(type='number' placeholder='Stock')
+      br
+    form.msg
+      textarea(rows='3' placeholder='Message')
+      div.btns
+        button.btn.btn-secondary(type='submit') Cancel
+        button.btn.btn-info(type='submit') Add
 
 
 include ../partials/footer.pug
