@@ -3,7 +3,7 @@ include ../partials/navbar.pug
 
 div
   .container
-    button.btn.btn-lg.btn-dark(href='./edit-droid.html' type='button' style='float: right; margin: 50px;') Add droid
+    a.btn.btn-lg.btn-dark(href='./edit-droid.html' role='button' style='float: right; margin: 50px;') Add droid
 
 .container
   h3.yoMama Combat Droids !  
@@ -24,8 +24,8 @@ div
         td 1B Units
         td
           .btn-group(role='group')
-            button.btn.btn-secondary(type='button') View
-            button.btn.btn-secondary(type='button') Edit
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
       tr
         th(scope='row') Combat Droid B2
         td 1548721542
@@ -33,8 +33,8 @@ div
         td 250M Units
         td
           .btn-group(role='group')
-            button.btn.btn-secondary(type='button') View
-            button.btn.btn-secondary(type='button') Edit
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
 .container
   h3 Command Droids ! 
   table.table.table-dark
@@ -52,8 +52,8 @@ div
         td 200M Units
         td
           .btn-group(role='group')
-            button.btn.btn-secondary(type='button') View
-            button.btn.btn-secondary(type='button') Edit
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
 .container
   h3 Pilote Droids ! 
   table.table.table-dark
@@ -71,8 +71,8 @@ div
         td 100M Units
         td
           .btn-group(role='group')
-            button.btn.btn-secondary(type='button') View
-            button.btn.btn-secondary(type='button') Edit
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
 .container
   h3 Protocol Droids !
   table.table.table-dark
@@ -90,10 +90,7 @@ div
         td 1 Unit
         td
           .btn-group(role='group')
-            button.btn.btn-secondary(type='button' href='./content.html') View
-            button.btn.btn-secondary(type='button') Edit
-            .buttons
-  a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-  a.btn.btn-primary(href='./edit-droid.html' role='button') Add droid
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
 
 include ../partials/footer.pug
