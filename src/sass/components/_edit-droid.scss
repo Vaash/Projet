@@ -3,21 +3,23 @@
     background-color: lightslategrey;
     border: black solid 2px;
     box-sizing: content-box;   
-    padding: 10px;
     margin: 1px;
+    padding: 10px;
     text-align: center;
     width: 20%;
 }
 
 .inputs {
     justify-content: center;
+    max-width: 60%;
+    transform: translateX(32.5%);
 }
 
 .image {
     border: black solid 2px;
-    width: auto;
     height: 500px;
     margin: 1px;
+    width: auto;
 }
 
 .total {
@@ -28,4 +30,17 @@
 
 .imageSelector {
     float: left;
+}
+
+.inputs {
+    max-width: 60%;
+    transform: translateX(32.5%);
+}
+
+.name {
+    transform: translateY(-15px);
+}
+
+.btns {
+    transform: translateX(-40px);
 }

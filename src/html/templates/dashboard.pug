@@ -4,7 +4,8 @@ include ../partials/navbar.pug
 div
   .container
     a.btn.btn-lg.btn-dark(href='./edit-droid.html' role='button' style='float: right; margin: 50px;') Add droid
-
+    a.btn.btn-light(href='./index.html' role='button' style='float: right; margin: 50px;' ) Logout
+    
 .container
   h3.yoMama Combat Droids !  
   table.table.table-dark
@@ -17,15 +18,13 @@ div
     tbody
       tr
         th(scope='row') Combat Droid B1
-        div
-          img(src='./combatDroidB1.jpg')
         td 1548721541
         td 25.000 RC
         td 1B Units
         td
           .btn-group(role='group')
             a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
       tr
         th(scope='row') Combat Droid B2
         td 1548721542
@@ -34,7 +33,7 @@ div
         td
           .btn-group(role='group')
             a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
 .container
   h3 Command Droids ! 
   table.table.table-dark
@@ -53,7 +52,7 @@ div
         td
           .btn-group(role='group')
             a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
 .container
   h3 Pilote Droids ! 
   table.table.table-dark
@@ -72,7 +71,7 @@ div
         td
           .btn-group(role='group')
             a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
 .container
   h3 Protocol Droids !
   table.table.table-dark
@@ -91,6 +90,6 @@ div
         td
           .btn-group(role='group')
             a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
-            a.btn.btn-primary(href='./edit-droid.html' role='button') Edit
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
 
 include ../partials/footer.pug

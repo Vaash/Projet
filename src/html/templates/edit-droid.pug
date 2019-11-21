@@ -8,19 +8,19 @@ div.total
   div.box
     h4.mb-4 New Droid Boss ?
     div.inputs
-      input.mb-4.col-md-8(type='text' placeholder='Name')
+      input#name.form-control.name(type='text' aria-describedby='name' placeholder='Name')
       br
-      input.mb-4(type='number' placeholder='Number')
+      input#name.form-control(type='number' aria-describedby='number' placeholder='Number')
       br
-      input.mb-4(type='number' placeholder='Selling price')
+      input#name.form-control(type='number' aria-describedby='sellingPrice' placeholder='Selling Price')
       br
-      input.mb-4(type='number' placeholder='Stock')
+      input#name.form-control(type='number' aria-describedby='stock' placeholder='Stock')
       br
-    form
-      textarea(rows='3' placeholder='Message')
+    form.form-group
+      textarea.form-control(rows='3' placeholder='Message')
     div.btns
       a.btn.btn-secondary(href='./dashboard.html' role='button' .viewBtn) Cancel
-      a.btn.btn-primary(href='./content.html' role='button') Add
+      a.btn.btn-warning(href='./dashboard.html' role='button') Add
 
 include ../partials/footer.pug
 
