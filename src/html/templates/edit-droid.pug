@@ -2,9 +2,10 @@ include ../partials/header.pug
 include ../partials/navbar.pug
 
 div.total
-  div.img
-  img(src="./img/combatDroidB1.jpg", alt="Droid", class='image')
-  form.box(action='./dashboard.html')
+  div.imageSelector
+    label(for='exampleFormControlFile1') Select image :
+    input#exampleFormControlFile1.form-control-file(type='file')
+  div.box
     h4.mb-4 New Droid Boss ?
     div.inputs
       input.mb-4.col-md-8(type='text' placeholder='Name')
@@ -15,7 +16,7 @@ div.total
       br
       input.mb-4(type='number' placeholder='Stock')
       br
-    form.msg
+    form
       textarea(rows='3' placeholder='Message')
       div.btns
         button.btn.btn-secondary(type='submit') Cancel
