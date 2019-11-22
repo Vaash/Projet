@@ -66,6 +66,12 @@
           title: 'The boys'
         },
       ]
+    },
+    {
+      id: 'logout',
+      link: './index.html',
+      title: 'Logout',
+      type: []
     }
   ]
 
@@ -78,5 +84,6 @@ nav.navigation
           each item_sub in item.type
             li.navigation__submenu-element
               a(href='#'+item_sub.id).navigation__submenu-link=item_sub.title
+
       
-    img(class="logo" src="https://boygeniusreport.files.wordpress.com/2015/08/darth-vader.jpg?quality=98&strip=all&w=782")
+    img(class="logo" src="./img/logo.png")
