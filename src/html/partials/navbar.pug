@@ -1,0 +1,82 @@
+- 
+  var navigation = [
+    {
+      id: 'droids',
+      link: '#droids',
+      title: 'Droids',
+      type: [
+        {
+          id: 'combat',
+          title: 'Combat'
+        },
+        {
+          id: 'pilot',
+          title: 'Pilot'
+        },
+        {
+          id: 'command',
+          title: 'Command'
+        }
+      ]
+    },
+    {
+      id: 'users',
+      link: '#users',
+      title: 'Users',
+      type: []
+    },
+    {
+      id: 'sales',
+      link: '#sales',
+      title: 'Sales',
+      type: [
+        {
+          id: 'daily-reports',
+          title: 'Daily reports'
+        },
+        {
+          id: 'monthly-reports',
+          title: 'Monthly reports'
+        },
+        {
+          id: 'sales-year',
+          title: 'Sales of the year'
+        }
+      ]
+    },
+    {
+      id: 'contact',
+      link: '#contact',
+      title: 'Contact',
+      type: [
+        {
+          id: 'super-boss',
+          title: 'Super boss'
+        },
+        {
+          id: 'it-team',
+          title: 'IT Team'
+        },
+        {
+          id: 'partners',
+          title: 'Partners'
+        },
+        {
+          id: 'the-boys',
+          title: 'The boys'
+        },
+      ]
+    }
+  ]
+
+nav.navigation
+  ul.navigation__list
+    each item in navigation
+      li.navigation__element
+        a(href=item.link, class='navigation__link--'+item.id).navigation__link=item.title
+        ul.navigation__submenu
+          each item_sub in item.type
+            li.navigation__submenu-element
+              a(href='#'+item_sub.id).navigation__submenu-link=item_sub.title
+      
+    img(class="logo" src="https://boygeniusreport.files.wordpress.com/2015/08/darth-vader.jpg?quality=98&strip=all&w=782")

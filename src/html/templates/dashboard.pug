@@ -1,27 +1,95 @@
-- var pugTitle= 'Dashboard'
-- var pugFooterDashboard= true
-
 include ../partials/header.pug
+include ../partials/navbar.pug
 
-body
-  .row
-    .offset-md-4.col-md-4.alignDashboard
-      .dashboardContainer
-        table
-          tr
-            th DOGS
-            th
-            th
-            th
-            th
-
-
-
-
-
-
-
-
-
+div
+  .container
+    a.btn.btn-lg.btn-dark(href='./edit-droid.html' role='button' style='float: right; margin: 50px;') Add droid
+    a.btn.btn-light(href='./index.html' role='button' style='float: right; margin: 50px;' ) Logout
+    
+.container
+  h3.yoMama Combat Droids !  
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Combat Droid B1
+        td 1548721541
+        td 25.000 RC
+        td 1B Units
+        td
+          .btn-group(role='group')
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
+      tr
+        th(scope='row') Combat Droid B2
+        td 1548721542
+        td 50.000 RC
+        td 250M Units
+        td
+          .btn-group(role='group')
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
+.container
+  h3 Command Droids ! 
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Command Droid
+        td 1548721543
+        td 40.000 RC
+        td 200M Units
+        td
+          .btn-group(role='group')
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
+.container
+  h3 Pilote Droids ! 
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Pilote Droid
+        td 1548721544
+        td 100.000 RC
+        td 100M Units
+        td
+          .btn-group(role='group')
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
+.container
+  h3 Protocol Droids !
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Number
+        th(scope='col') Price
+        th(scope='col') Stock
+    tbody
+      tr
+        th(scope='row') Protocol Droid
+        td 0000000001
+        td 26.000 pesos
+        td 1 Unit
+        td
+          .btn-group(role='group')
+            a.btn.btn-secondary(href='./content.html' role='button' .viewBtn) View
+            a.btn.btn-warning(href='./edit-droid.html' role='button') Edit
 
 include ../partials/footer.pug

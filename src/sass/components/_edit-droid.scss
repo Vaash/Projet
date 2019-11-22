@@ -1,0 +1,46 @@
+.box {
+    align-items: right;
+    background-color: lightslategrey;
+    border: black solid 2px;
+    box-sizing: content-box;   
+    margin: 1px;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.inputs {
+    justify-content: center;
+    max-width: 60%;
+    transform: translateX(32.5%);
+}
+
+.image {
+    border: black solid 2px;
+    height: 500px;
+    margin: 1px;
+    width: auto;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.imageSelector {
+    float: left;
+}
+
+.inputs {
+    max-width: 60%;
+    transform: translateX(32.5%);
+}
+
+.name {
+    transform: translateY(-15px);
+}
+
+.btns {
+    transform: translateX(-40px);
+}

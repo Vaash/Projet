@@ -1,0 +1,26 @@
+include ../partials/header.pug
+include ../partials/navbar.pug
+
+div.total
+  div.imageSelector
+    label(for='exampleFormControlFile1') Select image :
+    input#exampleFormControlFile1.form-control-file(type='file')
+  div.box
+    h4.mb-4 New Droid Boss ?
+    div.inputs
+      input#name.form-control.name(type='text' aria-describedby='name' placeholder='Name')
+      br
+      input#name.form-control(type='number' aria-describedby='number' placeholder='Number')
+      br
+      input#name.form-control(type='number' aria-describedby='sellingPrice' placeholder='Selling Price')
+      br
+      input#name.form-control(type='number' aria-describedby='stock' placeholder='Stock')
+      br
+    form.form-group
+      textarea.form-control(rows='3' placeholder='Message')
+    div.btns
+      a.btn.btn-secondary(href='./dashboard.html' role='button' .viewBtn) Cancel
+      a.btn.btn-warning(href='./dashboard.html' role='button') Add
+
+include ../partials/footer.pug
+

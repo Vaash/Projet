@@ -1,4 +1,8 @@
 @import "../sass/components/_header";
+@import "../sass/components/_navbar";
+@import "../sass/components/_content";
+@import "../sass/components/_dashboard";
+@import "../sass/components/_edit-droid";
 
 /* BASIC */
 
@@ -40,13 +44,6 @@ html {
     padding: 20px;
     padding-top: 100px;
     transform: translateY(-50px);
-  }
-
-  .fadeIn {
-    padding: 30px;
-      .fourth {
-        margin: 15px;
-      }
   }
 
   .headerPosition {
@@ -134,10 +131,6 @@ html {
   }
   
   input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-    -moz-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    -ms-transform: scale(0.95);
     transform: scale(0.95);
   }
   

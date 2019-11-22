@@ -1,0 +1,38 @@
+include ../partials/header.pug
+include ../partials/navbar.pug
+
+.form
+  .card
+    .wrapper.row
+      .preview.col-md-6
+        .preview-pic.tab-content
+          #pic-1.tab-pane.active
+            img(src='https://images-na.ssl-images-amazon.com/images/I/81qo3DyZWYL._SX425_.jpg')
+      .details.col-md-6
+        h3.product-title Protocol Droid
+        .rating
+          .stars
+            span.fa.fa-star.checked
+            span.fa.fa-star.checked
+            span.fa.fa-star.checked
+            span.fa.fa-star.checked
+            span.fa.fa-star
+          span.review-no 41 reviews
+        p.product-description
+          | Can clean your house faster than your wife. Might explode if shaken hard. Wonder how we can sell these...
+        h4.price
+          | current price: 
+          span 24000 pesos
+        p.vote
+          strong 91%
+          |  of buyers enjoyed this product! 
+          strong (87 votes)
+        h5.colors
+          | colors:
+          span.color.golden
+          span.color.green.not-available(data-toggle='tooltip' title="Doesn't exist")
+          span.color.blue.not-available(data-toggle='tooltip' title="Doesn't exist")
+        .action
+          a.btn.btn-warning(href='./dashboard.html' role='button') Add to cart
+
+include ../partials/footer.pug
